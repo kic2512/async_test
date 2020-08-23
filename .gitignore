@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 # Media
 *.jpg
-
+.DS_Store

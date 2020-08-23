@@ -17,7 +17,6 @@ if __name__ == '__main__':
     connection = pika.BlockingConnection(pika.ConnectionParameters(host='rabbitmq', port=5672))
     channel = connection.channel()
     channel.queue_declare(queue='download_stream', durable=True)
-
     try:
         while True:
             for url in list_urls:
